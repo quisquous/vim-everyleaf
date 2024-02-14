@@ -25,8 +25,8 @@ syn match leafJson /{[^}]*}/ contained
 
 syn match leafDate /[0-9]\{8\}/
 
-syn match leafSectionHeader /^--[^-]\+--$/
-syn region leafSection start=/^--[^-]\+--$/ end=/^--/me=e-2 fold contains=leafDate
+syn match leafSectionHeader /^--[^-]\+--/
+syn region leafSection start=/^--[^-]\+--/ end=/^--/me=e-2 fold contains=leafDate,leafSectionHeader transparent
 
 hi def link leafSectionHeader Identifier
 hi def link leafFood Statement
