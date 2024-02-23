@@ -12,7 +12,7 @@ endif
 syn keyword leafFood Breakfast Lunch Dinner Booze Coffee Tea Dessert contained
 syn keyword leafMisc Mood Sick Tears Yoga Ring Drug contained
 syn match leafMedia "Board Game" contained
-syn keyword leafMedia Game TV Book contained
+syn keyword leafMedia Game TV Book Movie Podcast contained
 
 syn match leafEntryHeader /^[^:]*:\s*/ contains=leafFood,leafMisc,leafMedia transparent nextgroup=leafEntry
 
